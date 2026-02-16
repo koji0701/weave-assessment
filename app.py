@@ -13,7 +13,7 @@ st.title("PostHog Engineering Impact Dashboard")
 st.caption("Identifying the top 5 most impactful engineers in PostHog/posthog")
 
 with st.sidebar:
-    days = st.slider("Time range (days)", min_value=3, max_value=30, value=14, step=1)
+    days = st.slider("Time range (days)", min_value=3, max_value=30, value=30, step=1)
 
     if st.button("Refresh Data"):
         with st.spinner("Fetching data from GitHub..."):
