@@ -1,0 +1,1 @@
+Impact = production. Merged PRs = production. I scored PRs by complexity (size, files touched, discussion depth), then evaluated engineers on both authored PRs and review quality. Reviews are weighted 3x higher than authorship (anybody write code via Claude, but it takes high-skill to properly review code). 
