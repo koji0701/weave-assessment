@@ -10,7 +10,6 @@ from metrics import compute_pr_metrics, compute_total_impact
 st.set_page_config(page_title="PostHog Engineering Impact", layout="wide")
 
 st.title("PostHog Engineering Impact Dashboard")
-st.caption("Identifying the top 5 most impactful engineers in PostHog/posthog")
 
 with st.sidebar:
     days = st.slider("Time range (days)", min_value=3, max_value=30, value=30, step=1)
@@ -39,6 +38,8 @@ with st.sidebar:
 
 Reviewer impact is weighted higher because thorough code review amplifies team-wide quality.
 """)
+
+st.caption(f"Top 5 most impactful engineers in PostHog/posthog — past {days} days")
 
 cached = load_from_file()
 
